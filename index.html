@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>Learning React</title>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+    <script>
+        function formatName(user) {
+            return user.firstName + ' ' + user.lastName;
+        }
+
+        const user = {
+            firstName : 'Emanuel',
+            lastName : 'Garcia'
+        };
+
+        const element = (
+            <h1>
+                Hello, { formatName(user) }!
+            </h1>
+        )
+
+
+    </script>
+</body>
